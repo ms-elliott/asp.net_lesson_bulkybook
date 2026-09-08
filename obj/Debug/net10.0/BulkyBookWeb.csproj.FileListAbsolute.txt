@@ -21,7 +21,6 @@ C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\rjsmcshtml.
 C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\scopedcss\bundle\BulkyBookWeb.styles.css
 C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\scopedcss\projectbundle\BulkyBookWeb.bundle.scp.css
-C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\compressed\ayccdwj4xa-{0}-b9sayid5wm-b9sayid5wm.gz
 C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\compressed\q0j1ld4xls-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\compressed\l677ufc7pu-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\compressed\rldgnh7odl-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -230,3 +229,5 @@ C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\bin\Debug\net10.0\runtimes\wi
 C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\bin\Debug\net10.0\runtimes\win-x86\native\msalruntime_x86.dll
 C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\BulkyBookWeb.csproj.AssemblyReference.cache
 C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\BulkyBoo.E6A3C86A.Up2Date
+C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\BulkyBookWeb.sourcelink.json
+C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\compressed\ayccdwj4xa-{0}-18sy6nf01k-18sy6nf01k.gz
