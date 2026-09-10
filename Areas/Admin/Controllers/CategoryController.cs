@@ -3,20 +3,20 @@ using BulkyBook.DataAccess.Data;
 using BulkyBook.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BulkyBookWeb.Areas.Customer.Controllers
+namespace BulkyBookWeb.Areas.Admin.Controllers
 {
-    [Area("Customer")]
+    [Area("Admin")]
     public class CategoryController : Controller
     {
-        private readonly ICategoryService _categorySrevice;
+        private readonly ICategoryService _categoryService;
 
         public CategoryController(ICategoryService categoryService)
         {
-            _categorySrevice = categoryService;
+            _categoryService = categoryService;
         }
         public async Task<IActionResult> Index()
         {
-            var categories = await _categorySrevice.GetAllCategoriesAsync();
+            var categories = await _categoryService.GetAllCategoriesAsync();
             return View("Index", categories);
         }
 
@@ -30,14 +30,14 @@ namespace BulkyBookWeb.Areas.Customer.Controllers
         [ActionName("Create")]
         public async Task<IActionResult> CreatePOST(Category category)
         {
-            if (!String.IsNullOrEmpty(category.Name) && !await _categorySrevice.IsCategoryNameUniqueAsync(category.Name))
+            if (!String.IsNullOrEmpty(category.Name) && !await _categoryService.IsCategoryNameUniqueAsync(category.Name))
             {
                 ModelState.AddModelError("", "Category name already exists!");
             }
 
             if (ModelState.IsValid)
             {
-                await _categorySrevice.CreateCategoryAsync(category);
+                await _categoryService.CreateCategoryAsync(category);
                 TempData["success"] = "Category created successfully";
                 return RedirectToAction("Index");
             }
@@ -51,7 +51,7 @@ namespace BulkyBookWeb.Areas.Customer.Controllers
                 return NotFound();
             }
 
-            var category = await _categorySrevice.GetCategoryByIdAsync(id.Value);
+            var category = await _categoryService.GetCategoryByIdAsync(id.Value);
             if (category == null)
             {
                 return NotFound();
@@ -66,14 +66,14 @@ namespace BulkyBookWeb.Areas.Customer.Controllers
         public async Task<IActionResult> UpdatePOST(Category category)
         {
             if (!String.IsNullOrEmpty(category.Name) && 
-                !await _categorySrevice.IsCategoryNameUniqueAsync(category.Name, category.Id))
+                !await _categoryService.IsCategoryNameUniqueAsync(category.Name, category.Id))
             {
                 ModelState.AddModelError("", "Category name already exists!");
             }
 
             if (ModelState.IsValid)
             {
-                await _categorySrevice.UpdateCategoryAsync(category);
+                await _categoryService.UpdateCategoryAsync(category);
                 TempData["success"] = "Category updated successfully";
                 return RedirectToAction("Index");
             }
@@ -87,7 +87,7 @@ namespace BulkyBookWeb.Areas.Customer.Controllers
                 return NotFound();
             }
 
-            var category = await _categorySrevice.GetCategoryByIdAsync(id.Value);
+            var category = await _categoryService.GetCategoryByIdAsync(id.Value);
             if (category == null)
             {
                 return NotFound();
@@ -101,7 +101,7 @@ namespace BulkyBookWeb.Areas.Customer.Controllers
         [ActionName("delete")]
         public async Task<IActionResult> DeletePOST(int id)
         {
-            await _categorySrevice.DeleteCategoryAsync(id);
+            await _categoryService.DeleteCategoryAsync(id);
             TempData["success"] = "Category deleted successfully";
             return RedirectToAction("Index");
         }

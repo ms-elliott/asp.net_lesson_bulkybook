@@ -240,4 +240,4 @@ C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\refint\Bulk
 C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\BulkyBookWeb.pdb
 C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\BulkyBookWeb.genruntimeconfig.cache
 C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\ref\BulkyBookWeb.dll
-C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\compressed\k5hz13g0sv-{0}-cbcc4stxez-cbcc4stxez.gz
+C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\compressed\k5hz13g0sv-{0}-ru9t3xri93-ru9t3xri93.gz
