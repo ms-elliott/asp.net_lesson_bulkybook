@@ -2,6 +2,8 @@
 using BulkyBook.DataAccess.Data;
 using BulkyBook.Models;
 using BulkyBook.Models.ViewModels;
+using BulkyBook.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore.Query.Internal;
@@ -9,6 +11,7 @@ using Microsoft.EntityFrameworkCore.Query.Internal;
 namespace BulkyBookWeb.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.RoleAdmin)]
     public class ProductController : Controller
     {
         private readonly IProductService _productService;
@@ -21,6 +24,8 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
             _webHostEnvironment = webHostEnvironment;
             _categoryService = categoryService;
         }
+
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             var products = await _productService.GetAllProductsAsync();
@@ -98,6 +103,7 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
         }
 
         #region API CALL
+        [AllowAnonymous]
         public async Task<IActionResult> GetAll()
         {
             var products = await _productService.GetAllProductsAsync(true);

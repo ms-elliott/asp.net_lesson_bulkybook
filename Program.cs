@@ -1,6 +1,8 @@
 using BulkyBook.Business.Services;
 using BulkyBook.Business.Services.IServices;
 using BulkyBook.DataAccess.Data;
+using BulkyBook.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,8 +14,18 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("SQLConnection"));
 });
+
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>(); 
 builder.Services.AddScoped<ICategoryService,CategoryService>();
 builder.Services.AddScoped<IProductService, ProductService>();
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/identity/account/login";
+    options.LogoutPath = "/identity/account/logout";
+    options.AccessDeniedPath = "/identity/account/accessdenied";
+    options.ExpireTimeSpan = TimeSpan.FromDays(30);
+});
 
 var app = builder.Build();
 
@@ -27,6 +39,8 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseRouting();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 
