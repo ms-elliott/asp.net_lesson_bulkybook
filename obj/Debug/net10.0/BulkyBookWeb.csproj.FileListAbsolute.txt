@@ -226,8 +226,6 @@ C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\compressed\
 C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\compressed\c2kiqhrr2r-{0}-muycvpuwrr-muycvpuwrr.gz
 C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\compressed\fa7o7rk0e0-{0}-87fc7y1x7t-87fc7y1x7t.gz
 C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\compressed\sct4gjpg9x-{0}-mlv21k5csn-mlv21k5csn.gz
-C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\compressed\edvcidqsro-{0}-e99hnrhwtf-e99hnrhwtf.gz
-C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\compressed\uowlrolq3j-{0}-e99hnrhwtf-e99hnrhwtf.gz
 C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\staticwebassets.development.json
@@ -420,3 +418,6 @@ C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\compressed\
 C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\compressed\v0zgfp0y55-{0}-87fc7y1x7t-87fc7y1x7t.gz
 C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\compressed\yfc7ypekbg-{0}-mlv21k5csn-mlv21k5csn.gz
 C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\scopedcss\Views\Shared\_AdminLayout.cshtml.rz.scp.css
+C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\compressed\edvcidqsro-{0}-ledsrnewl4-ledsrnewl4.gz
+C:\Users\oyok0\source\repos\BulkyBook\BulkyBookWeb\obj\Debug\net10.0\compressed\uowlrolq3j-{0}-ledsrnewl4-ledsrnewl4.gz
